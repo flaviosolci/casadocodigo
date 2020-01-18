@@ -16,8 +16,12 @@ import br.com.casadocodigo.loja.models.ExternalOrderResponse;
 @RequestMapping("/pedidos")
 public class PedidosServicoController {
 
-	@Autowired
 	private RestTemplate restTemplate;
+
+	@Autowired
+	public PedidosServicoController(RestTemplate restTemplate) {
+		this.restTemplate = restTemplate;
+	}
 
 	@RequestMapping(method = RequestMethod.GET)
 	public ModelAndView listar() {
