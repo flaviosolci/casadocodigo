@@ -43,7 +43,7 @@
 			<section class="summary">
 				<ul>
 					<li>
-						<h3>E muito mais... <a href='/pages/sumario-java8'>veja o sumário</a>.</h3>
+						<h3>E muito mais... <a href='${contextPath }/${produto.sumarioPath }'>veja o sumário</a>.</h3>
 					</li>
 				</ul>
 			</section>
