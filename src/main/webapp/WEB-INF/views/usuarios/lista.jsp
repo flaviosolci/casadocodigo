@@ -21,11 +21,17 @@
 				<tr>
 					<th>Nome</th>
 					<th>Email</th>
+					<th>Roles</th>
 				</tr>
 				<c:forEach items="${usuarios }" var="usuario">
 					<tr>
 						<td>${usuario.nome }</td>
 						<td>${usuario.email }</td>
+						<td>${usuario.roles }</td>
+						<td><a
+							href="${s:mvcUrl('UC#listarRoles').arg(0, usuario.email).build() }"><img
+								src="<c:url value="/resources/imagens/adicionar.png" />"
+								alt="editar" /></a></td>
 					</tr>
 				</c:forEach>
 			</table>
