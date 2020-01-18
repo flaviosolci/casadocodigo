@@ -95,6 +95,7 @@ public class HomeController {
 		produto.setTitulo(titulo);
 		produto.setDataLancamento(data);
 		produto.setDescricao(descricao);
+		produto.setSumarioPath("arquivos-sumario/sumario-java8.png");
 		Preco ebook = new Preco(new BigDecimal(precos[0]), TipoPreco.EBOOK);
 		Preco impresso = new Preco(new BigDecimal(precos[0]), TipoPreco.IMPRESSO);
 		Preco combo = new Preco(new BigDecimal(precos[0]), TipoPreco.COMBO);
