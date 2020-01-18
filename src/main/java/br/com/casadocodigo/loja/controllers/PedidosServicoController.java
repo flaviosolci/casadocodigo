@@ -28,7 +28,7 @@ public class PedidosServicoController {
 		String uri = "https://book-payment.herokuapp.com/orders";
 		List<ExternalOrderResponse> response = Arrays
 				.asList(restTemplate.getForObject(uri, ExternalOrderResponse[].class));
-		ModelAndView modelAndView = new ModelAndView("pedidos/lista");
+		ModelAndView modelAndView = new ModelAndView("pedidos/pedidos");
 		modelAndView.addObject("pedidos", response);
 		return modelAndView;
 	}
